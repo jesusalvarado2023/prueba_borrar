@@ -7,7 +7,6 @@ import io
 # URL directa al archivo .pkl en GitHub (usa el enlace RAW)
 MODEL_URL = "decision_tree_model.pkl"
 
-#@st.cache_data
 def load_model():
     response = requests.get(MODEL_URL)
     if response.status_code != 200:
